@@ -1,5 +1,5 @@
 let delay = 100
-for (let i = 0; i < 20; i++) {
+for (let i = 0; i < Math.random() * 100; i++) {
     setTimeout(() => {
         process.stdout.write('\r|   ');
     }, delay);
