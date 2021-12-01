@@ -1,4 +1,5 @@
-let delay = 100
+let delay = 50;
+
 for (let i = 0; i < Math.random() * 100; i++) {
     setTimeout(() => {
         process.stdout.write('\r|   ');
@@ -6,17 +7,17 @@ for (let i = 0; i < Math.random() * 100; i++) {
 
     setTimeout(() => {
         process.stdout.write('\r/   ');
-    }, delay + 100);
+    }, delay + 50);
 
     setTimeout(() => {
         process.stdout.write('\r-   ');
-    }, delay + 200);
+    }, delay + 100);
 
     setTimeout(() => {
         process.stdout.write('\r\\   ');
-    }, delay + 300);
+    }, delay + 150);
 
-    delay += 400;
+    delay += 200;
 }
 
 setTimeout(() => {
